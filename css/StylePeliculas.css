@@ -1,0 +1,272 @@
+.footer .informacion {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+  margin: 0 auto;
+  gap: 10px;
+  justify-content: center;
+}
+
+.sector {
+  display: flex;
+  flex-direction: row;
+}
+
+.sector a {
+  text-decoration: underline;
+  margin: 5px 5px;
+  color: rgba(241, 238, 238, 0.853);
+  font-size: 13px;
+}
+
+footer a {
+  color: rgb(186, 178, 178);
+  text-decoration: underline;
+}
+
+.container-fluid {
+  max-width: 80%;
+}
+
+.PeliculasResponsive {
+  display: none;
+}
+
+.navbar .container-fluid .navbar-brand {
+  color: red;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin: auto 0;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav .registrarse-link {
+  border: 1px solid red;
+  padding: 10px 15px;
+  border-radius: 4px;
+  color: white;
+  background-color: red;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 0 0 5px;
+}
+
+.navbar .navbar-nav .dropdown {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 0 3.5rem;
+  color: white;
+  padding: 1px 10px;
+}
+
+.navbar .navbar-nav .des {
+  display: flex;
+  display: none;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  max-width: 1920px;
+  max-height: 500px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.carousel-caption .texto {
+  width: 500px;
+  height: 300px;
+  display: none;
+  position: relative;
+  margin: 60px auto;
+}
+
+.carousel-item img:hover {
+  filter: brightness(0.5);
+}
+
+.carousel-item img:hover + .carousel-caption .texto {
+  display: block;
+}
+
+.Peliculas {
+  height: 60vh;
+}
+
+.pelicartelera {
+  width: 340px;
+  height: 190px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 auto;
+  background-color: rgb(45, 45, 45);
+  box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.75);
+}
+
+.pelicartelera img {
+  height: 200px;
+}
+
+.pelicartelera:hover {
+  height: 400px;
+  transition: all 1s;
+  box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.75);
+}
+
+.footer {
+  color: rgb(186, 178, 178);
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid gray;
+  height: 12vh;
+}
+
+@media (max-width: 575.98px) {
+  .titulo h1, h2, h3 {
+    font-size: 35px;
+  }
+  .Input {
+    margin: 30px 0;
+  }
+  .Input input {
+    padding: 10px 20px;
+  }
+  .Input a {
+    font-size: 10px;
+    padding: 15px 20px;
+    list-style: none;
+  }
+  .navbar .navbar-nav .registrarse-link {
+    border: 0px solid red;
+    padding: 10px 0px;
+    border-radius: 4px;
+    color: rgb(255, 5, 5);
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 0 5px;
+  }
+  .navbar .navbar-nav .des {
+    display: block;
+    color: white;
+  }
+  .navbar .navbar-nav .dropdown {
+    display: none;
+  }
+  #carouselE {
+    display: none;
+  }
+  .Peliculas {
+    display: none;
+  }
+  .pelicartelera {
+    width: 340px;
+    height: 190px;
+    overflow: hidden;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    background-color: rgb(45, 45, 45);
+    box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.75);
+  }
+  .PeliculasResponsive {
+    display: block;
+    margin: 20px;
+  }
+  .titulo {
+    gap: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .titulo h1, h2, h3 {
+    font-size: 35px;
+  }
+  .Input {
+    margin: 30px 0;
+  }
+  .Input input {
+    padding: 10px 20px;
+  }
+  .Input a {
+    font-size: 10px;
+    padding: 15px 20px;
+    list-style: none;
+  }
+  .navbar .navbar-nav .registrarse-link {
+    border: 0px solid red;
+    padding: 10px 0px;
+    border-radius: 4px;
+    color: rgb(255, 5, 5);
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 0 5px;
+  }
+  .navbar .navbar-nav .des {
+    display: block;
+    color: white;
+  }
+  .navbar .navbar-nav .dropdown {
+    display: none;
+  }
+  #carouselE {
+    display: none;
+  }
+  .Peliculas {
+    display: none;
+  }
+  .pelicartelera {
+    width: 340px;
+    height: 190px;
+    overflow: hidden;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    background-color: rgb(45, 45, 45);
+    box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.75);
+  }
+  .PeliculasResponsive {
+    display: block;
+    margin: 20px;
+  }
+  .titulo {
+    gap: 40px;
+  }
+}
+@media (max-width: 1430px) {
+  #carouselE {
+    display: none;
+  }
+  .Peliculas {
+    display: none;
+  }
+  .PeliculasResponsive {
+    display: block;
+    margin: 20px;
+  }
+  .pelicartelera {
+    width: 340px;
+    height: 190px;
+    overflow: hidden;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    background-color: rgb(45, 45, 45);
+    box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.75);
+  }
+  .titulo {
+    gap: 40px;
+  }
+}/*# sourceMappingURL=StylePeliculas.css.map */

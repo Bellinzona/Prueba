@@ -1,0 +1,140 @@
+@import 'mixin';
+
+.container-fluid {
+    max-width: 80%;
+}
+
+.PeliculasResponsive {
+    display: none
+}
+
+.navbar .container-fluid .navbar-brand {
+    @include navbarEstilo();
+}
+
+.navbar .navbar-nav .registrarse-link {
+    @include BotonEstilo()
+}
+
+
+.navbar .navbar-nav .dropdown {
+    @include BotonIdioma()
+}
+
+.navbar .navbar-nav .des {
+    display: flex;
+    display: none;
+}
+
+.container-fluid{
+    max-width: 80%;
+}
+
+main{
+    background-color: black;
+  }
+
+
+  main {
+    .video{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+}
+
+main{
+    
+    video{
+    margin: auto;
+    width: 700px;
+    height: 400px;
+    }
+}
+
+
+ .masinfo .info{
+    align-items: center;
+    margin: auto;
+    max-width: 80%;
+    border-top: 1px solid gray;
+    display: flex;
+    flex-direction: row;
+ }
+
+ .masinfo .info h3{
+    font-size: 70px;
+ }
+
+ footer p{
+    color: white;
+ }
+
+
+ @media (max-width: 575.98px) {
+
+    @include responsiveNav();
+
+    video{
+        display: none;
+
+    }
+
+    img{
+        width: 330px;
+    }
+
+    .masinfo .info{
+        flex-direction: column;
+        margin: 50px auto;
+        
+     }
+
+
+}
+
+
+@media (max-width: 768px) {
+    @include responsiveNav();
+    video{
+        display: none;
+
+    }
+
+    img{
+        width: 330px;
+    }
+
+    .masinfo .info{
+        flex-direction: column;
+        margin: 50px auto;
+        
+     }
+
+
+   
+
+}
+
+@media (max-width: 1030px) {
+    @include responsiveNav();
+
+    video{
+        display: none;
+
+    }
+
+    img{
+        width: 330px;
+    }
+
+    .masinfo .info{
+        flex-direction: column;
+        margin: 50px auto;
+        
+     }
+
+    
+
+}

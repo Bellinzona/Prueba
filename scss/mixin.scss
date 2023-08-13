@@ -1,0 +1,140 @@
+@mixin navbarEstilo{
+    color: red;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin: auto 0 ;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+
+}
+
+@mixin BotonEstilo{
+    border: 1px solid red;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: white;
+    background-color: red;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 0 5px;
+
+}
+
+@mixin BotonIdioma{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 0 3.5rem;
+    color: white;
+    padding: 1px 10px;
+
+}
+
+@mixin TarjetasEstilo($imagen: url('https://statics.eleconomista.com.ar/2022/01/61f1cb8c3dd18.jpeg')){
+    background-image: linear-gradient(to bottom left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), $imagen;
+    background-size: cover;
+    background-position: center;
+
+}
+
+@mixin FooterEstilo{
+    color: rgb(186, 178, 178);
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid gray;
+    height: 12vh;
+  }
+
+  .footer .informacion{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    margin: 0 auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+.sector{
+    display: flex;
+    flex-direction: row;
+}
+
+.sector a{
+    text-decoration: underline;
+    margin: 5px 5px;
+    color: rgba(241, 238, 238, 0.853);
+    font-size: 13px;
+}
+footer a{
+    color: rgb(186, 178, 178);
+    text-decoration: underline;
+}
+
+
+@mixin responsiveNav{
+    .titulo h1, h2, h3 {
+        font-size: 35px;
+      }
+      .Input {
+        margin: 30px 0;
+      }
+      .Input input {
+        padding: 10px 20px;
+      }
+      .Input a {
+        font-size: 10px;
+        padding: 15px 20px;
+        list-style: none;
+      }
+      .navbar .navbar-nav .registrarse-link {
+        border: 0px solid red;
+        padding: 10px 0px;
+        border-radius: 4px;
+        color: rgb(255, 5, 5);
+        background-color: rgba(255, 255, 255, 0);
+        font-size: 15px;
+        font-weight: bold;
+        margin: 0 0 0 5px;
+      }
+      .navbar .navbar-nav .des {
+        display: block;
+        color: white;
+      }
+      .navbar .navbar-nav .dropdown {
+        display: none;
+      }
+        
+    }
+
+@mixin BotonInicioSesion{
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    font-size: 15px;
+    font-weight: bold;
+    width: 20rem;
+    height: 45px;
+    margin: 3.5rem auto;
+    cursor: pointer;
+}
+
+@mixin PeliculasCartelera{
+    width: 340px;
+    height: 190px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    background-color: rgb(45, 45, 45);
+    box-shadow: 0px 1px 16px 0px rgba(0,0,0,0.75);
+
+}
+
+@mixin PeliResponsive{
+    
+    
+}

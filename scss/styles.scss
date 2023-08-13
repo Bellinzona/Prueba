@@ -1,0 +1,277 @@
+@import 'mixin';
+
+
+* {
+	box-sizing:border-box ;
+
+}
+html{
+	scroll-behavior: smooth;
+}
+
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+    background-color: rgb(205, 195, 195);
+
+}
+
+h1 {font-size: 7,5em;}
+h2 {font-size: 2,7em}
+h3 {font-size: 2em}
+p  {font-size: 1,25em}
+
+
+
+
+.container-fluid{
+    max-width: 80%;
+}
+
+
+
+    .Input{
+        margin: 30px 0;
+    }
+
+    .Input input{
+        padding: 10px 20px;
+    }
+
+    .Input a{
+        font-size: 10px;
+        padding: 15px 20px;
+        list-style: none;
+    }
+
+    .navbar .navbar-nav .registrarse-link {
+        border: 0px solid red;
+        padding: 10px 0px;
+        border-radius: 4px;
+        color: rgb(255, 5, 5);
+        background-color: rgba(255, 255, 255, 0);
+        font-size: 15px;
+        font-weight: bold;
+        margin: 0 0 0 5px;
+      }
+
+      .navbar .navbar-nav .des{
+        display: block;
+        color: white;
+
+      }
+
+      .navbar .navbar-nav .dropdown{
+        display: none;
+
+      }
+
+.navbar .container-fluid .navbar-brand{
+    @include navbarEstilo();
+}
+
+.navbar .navbar-nav .registrarse-link {
+    @include BotonEstilo()
+}
+
+
+.navbar .navbar-nav .dropdown{
+    @include BotonIdioma()
+    
+}
+
+.navbar .navbar-nav .des{
+    display: flex;
+    display: none;
+}
+
+main{
+    background-image: linear-gradient(to bottom left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/Netflix.jpg');
+    height: 75vh ;
+}
+
+.titulo{
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.titulo{
+    h1{ 
+        font-size: 50px;
+        margin: auto;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+
+    }
+
+    h4{ 
+        display: flex;
+        margin: 20px auto;
+        font-size: 25px;
+        bottom: 26px;
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
+        font-weight: bold;
+    
+        }
+
+    h5{
+        display: flex;
+        font-size: 20px;
+        font-weight: bold;
+        margin: auto;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+
+    }
+    
+}
+
+
+.Input{
+    display: flex;
+    width: 100%;
+    margin: 25px ;
+    align-items: center;
+    justify-content: center;
+
+    input{
+        padding: 20px 120px;
+        justify-content: flex-start;
+        border-radius: 4px;
+        background-color: rgb(45, 44, 44);
+        border-style: none;
+        color: white;
+        border: 1px solid rgb(118, 117, 117) ;
+    }
+
+    a{
+        border: 1px solid red;
+        padding: 16px 40px;
+        border-radius: 4px;
+        color: white;
+        background-color: red;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0 0 0 5px;
+
+    }
+    
+}
+
+.Tarjetas{
+    display: flex;
+    height: 25vh;
+    background-color: black;
+    justify-content: space-between;
+
+    .tarjeta{
+        display: flex;
+        width: 350px;
+        height: 120px;
+        border-radius: 8px;
+        flex-direction: column;
+        overflow: hidden;
+        cursor: pointer;
+        margin: 10px 20px;
+        box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+
+        a{
+            border-style: none;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+}
+
+.tarjeta:hover{
+    box-shadow: 0px 1px 16px 0px rgba(0,0,0,0.75);
+}
+
+.tarjeta.peliculas{
+    @include TarjetasEstilo(url('https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2021/05/28/16221918457790.jpg'))
+}
+
+.tarjeta.sobreN{
+    @include TarjetasEstilo(url('https://statics.eleconomista.com.ar/2022/01/61f1cb8c3dd18.jpeg'))
+}
+
+.tarjeta.contacto{
+    @include TarjetasEstilo(url('https://media.glamour.mx/photos/639b7cd9a6d09f1d121b0565/16:9/w_2560%2Cc_limit/estrenos_de_netflix_enero_2023.jpg'))
+}
+
+
+.footer{
+    color: rgb(186, 178, 178);
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid gray;
+  }
+
+  .footer .informacion{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    padding: 10px 0;
+    margin: 0 auto;
+    gap: 10px;
+    justify-content: center;
+    
+}
+
+.sector{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+
+.sector a{
+    text-decoration: underline;
+    margin: 5px 0;
+    color: rgba(241, 238, 238, 0.853);
+    font-size: 13px;
+}
+footer a{
+    color: rgb(186, 178, 178);
+    text-decoration: underline;
+}
+
+@media (max-width: 575.98px) {
+
+    @include responsiveNav();
+
+    .Tarjetas{
+        height: 65vh;
+
+        .tarjeta{
+            margin: 20px auto;
+          }
+      }
+
+}
+
+@media (max-width: 768px){
+    @include responsiveNav();
+
+
+    .Tarjetas{
+        height: 65vh;
+
+        .tarjeta{
+            margin: 20px auto;
+            flex-direction: row;
+          }
+      }
+
+}
+
+@media (max-width: 992px){
+    @include responsiveNav()
+
+}

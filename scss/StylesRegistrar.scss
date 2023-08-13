@@ -1,0 +1,135 @@
+@import 'mixin';
+
+.container-fluid{
+    max-width: 80%;
+}
+
+.navbar .container-fluid .navbar-brand{
+    @include navbarEstilo();
+}
+
+.navbar .navbar-nav .registrarse-link {
+    @include BotonEstilo()
+}
+
+
+.navbar .navbar-nav .dropdown{
+    @include BotonIdioma()
+    
+}
+
+.navbar .navbar-nav .des{
+    display: flex;
+    display: none;
+}
+
+main{
+    background-image: linear-gradient(to bottom left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/Netflix.jpg');
+    height: 80vh ;
+}
+
+
+.carta{
+    display: flex;
+    width: 450px;
+    height: 600px;
+    background-color: black;
+    margin: auto;
+    border-radius: 7px;
+    flex-direction: column;
+
+    .titulo{
+        display: flex;
+        margin: 40px 15%;
+    }
+
+    .texto{
+        display: flex;
+        margin: 10px 15%;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    .input{
+        display: flex;
+        margin: 0px 15%;
+        padding: 5px 0;
+        border-radius: 4px;
+        background-color:rgb(45, 44, 44);
+        border-style: none;
+        border:1px solid rgb(118, 117, 117) ;
+        color: white;
+    }
+
+    button{
+        @include BotonInicioSesion
+    }
+}
+
+
+.footer{
+    color: rgb(186, 178, 178);
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid gray;
+    height: 12vh;
+  }
+
+  .footer .informacion{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    margin: 0 auto;
+    gap: 10px;
+    justify-content: center;
+    
+}
+
+.sector{
+    display: flex;
+    flex-direction: row;
+    
+    
+    
+}
+
+
+.sector a{
+    text-decoration: underline;
+    margin: 5px 5px;
+    color: rgba(241, 238, 238, 0.853);
+    font-size: 13px;
+}
+footer a{
+    color: rgb(186, 178, 178);
+    text-decoration: underline;
+}
+
+
+@media (max-width: 575.98px) {
+
+    @include responsiveNav();
+
+    .carta{
+        display: flex;
+        width: 350px;
+        height: 510px;
+        background-color: rgb(0, 0, 0);
+        margin: auto;
+        border-radius: 7px;
+        flex-direction: column;
+}
+}
+
+
+@media (max-width: 768px){
+    @include responsiveNav();
+
+}
+
+@media (max-width: 992px){
+    @include responsiveNav();
+
+}
+
+
